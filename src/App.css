@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light background for the overall page */
+}
+
+h1 {
+  background-color: orange; /* Header background color */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: -20px -20px 20px -20px; /* Remove default margin and align to container */
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background-color: #333; /* Background color for list items */
+  color: white; /* Text color for list items */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+ul li a {
+  color: white; /* Text color for links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+ul li a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+footer {
+  position: fixed; /* Makes the footer stick */
+  bottom: 10px; /* Position footer at the bottom */
+  left: 10px; /* Left-aligned footer */
+  color: gray; /* Footer text color */
+  width: auto;
+}
+
+footer + footer {
+  bottom: 0; /* Correct position for bottom footer */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.footer-right {
+  position: fixed; /* Fixed position for WhatsApp support */
+  bottom: 10px; /* Adjust position */
+  right: 10px; /* Right-aligned WhatsApp link */
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: green; /* WhatsApp color */
+  font-weight: bold;
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-right a:hover {
+  background-color: #f0f0f0;
+  color: darkgreen;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,32 @@
+/* src/pages/Home.css */
+.home-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .home-page h1 {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .muscle-buttons {
+    margin: 20px 0;
+  }
+  
+  .muscle-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .muscle-button:hover {
+    background-color: #555;
+  }
+  
