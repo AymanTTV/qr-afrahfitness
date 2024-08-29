@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter, Route, and Routes
 import Home from './pages/Home'; // Import the Home component
 import Deltoids from './pages/Deltoids';
 import Biceps from './pages/Biceps';
@@ -15,28 +15,30 @@ import LatissimusDorsi from './pages/LatissimusDorsi';
 import Gluteals from './pages/Gluteals';
 import Calves from './pages/Calves';
 import Hamstrings from './pages/Hamstrings';
-import NotFound from './pages/NotFound'; // A NotFound component for undefined routes
+import NotFound from './pages/NotFound'; // Import the NotFound component for undefined routes
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/deltoids" element={<Deltoids />} />
-      <Route path="/biceps" element={<Biceps />} />
-      <Route path="/pectorals" element={<Pectorals />} />
-      <Route path="/upperabdominals" element={<UpperAbdominals />} />
-      <Route path="/lowerabdominals" element={<LowerAbdominals />} />
-      <Route path="/adductors" element={<Adductors />} />
-      <Route path="/quadriceps" element={<Quadriceps />} />
-      <Route path="/triceps" element={<Triceps />} />
-      <Route path="/trapezius" element={<Trapezius />} />
-      <Route path="/forearms" element={<Forearms />} />
-      <Route path="/latissimusdorsi" element={<LatissimusDorsi />} />
-      <Route path="/gluteals" element={<Gluteals />} />
-      <Route path="/calves" element={<Calves />} />
-      <Route path="/hamstrings" element={<Hamstrings />} />
-      <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
-    </Routes>
+    <Router> {/* Wrap your App component with the Router */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/deltoids" element={<Deltoids />} />
+        <Route path="/biceps" element={<Biceps />} />
+        <Route path="/pectorals" element={<Pectorals />} />
+        <Route path="/upperabdominals" element={<UpperAbdominals />} />
+        <Route path="/lowerabdominals" element={<LowerAbdominals />} />
+        <Route path="/adductors" element={<Adductors />} />
+        <Route path="/quadriceps" element={<Quadriceps />} />
+        <Route path="/triceps" element={<Triceps />} />
+        <Route path="/trapezius" element={<Trapezius />} />
+        <Route path="/forearms" element={<Forearms />} />
+        <Route path="/latissimusdorsi" element={<LatissimusDorsi />} />
+        <Route path="/gluteals" element={<Gluteals />} />
+        <Route path="/calves" element={<Calves />} />
+        <Route path="/hamstrings" element={<Hamstrings />} />
+        <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
+      </Routes>
+    </Router>
   );
 }
 
