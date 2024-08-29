@@ -1,20 +1,6 @@
 {
     "rewrites": [
-      { "source": "/", "destination": "/" },
-      { "source": "/deltoids", "destination": "/" },
-      { "source": "/biceps", "destination": "/" },
-      { "source": "/pectorals", "destination": "/" },
-      { "source": "/upperabdominals", "destination": "/" },
-      { "source": "/lowerabdominals", "destination": "/" },
-      { "source": "/adductors", "destination": "/" },
-      { "source": "/quadriceps", "destination": "/" },
-      { "source": "/triceps", "destination": "/" },
-      { "source": "/trapezius", "destination": "/" },
-      { "source": "/forearms", "destination": "/" },
-      { "source": "/latissimusdorsi", "destination": "/" },
-      { "source": "/gluteals", "destination": "/" },
-      { "source": "/calves", "destination": "/" },
-      { "source": "/hamstrings", "destination": "/" }
+      { "source": "/(.*)", "destination": "/" }
     ]
   }
   
