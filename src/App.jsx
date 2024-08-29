@@ -20,7 +20,7 @@ import NotFound from './pages/NotFound'; // A NotFound component for undefined r
 function App() {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/deltoids" element={<Deltoids />} />
       <Route path="/biceps" element={<Biceps />} />
       <Route path="/pectorals" element={<Pectorals />} />

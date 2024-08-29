@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Deltoids = () => {
+function Deltoids () {
   return (
     <div style={{ padding: '20px' }}>
       <h1>Deltoids</h1>
