@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter, Route, and Routes
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'; // Import the Home component
 import Deltoids from './pages/Deltoids';
 import Biceps from './pages/Biceps';
@@ -15,11 +15,10 @@ import LatissimusDorsi from './pages/LatissimusDorsi';
 import Gluteals from './pages/Gluteals';
 import Calves from './pages/Calves';
 import Hamstrings from './pages/Hamstrings';
-import NotFound from './pages/NotFound'; // Import the NotFound component for undefined routes
 
 function App() {
   return (
-    <Router> {/* Wrap your App component with the Router */}
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/deltoids" element={<Deltoids />} />
@@ -36,7 +35,6 @@ function App() {
         <Route path="/gluteals" element={<Gluteals />} />
         <Route path="/calves" element={<Calves />} />
         <Route path="/hamstrings" element={<Hamstrings />} />
-        <Route path="*" element={<NotFound />} /> {/* Catch-all for undefined routes */}
       </Routes>
     </Router>
   );
