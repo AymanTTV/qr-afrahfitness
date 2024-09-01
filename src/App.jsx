@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Deltoids from './pages/Deltoids';
 import Biceps from './pages/Biceps';
@@ -19,28 +19,27 @@ import Obliques from './pages/Obliques';
 
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/deltoids" element={<Deltoids />} />
-      <Route path="/biceps" element={<Biceps />} />
-      <Route path="/pectorals" element={<Pectorals />} />
-      <Route path="/obliques" element={<Obliques />} />
-      <Route path="/upperabdominals" element={<UpperAbdominals />} />
-      <Route path="/lowerabdominals" element={<LowerAbdominals />} />
-      <Route path="/adductors" element={<Adductors />} />
-      <Route path="/quadriceps" element={<Quadriceps />} />
-      <Route path="/triceps" element={<Triceps />} />
-      <Route path="/trapezius" element={<Trapezius />} />
-      <Route path="/forearms" element={<Forearms />} />
-      <Route path="/latissimusdorsi" element={<LatissimusDorsi />} />
-      <Route path="/gluteals" element={<Gluteals />} />
-      <Route path="/calves" element={<Calves />} />
-      <Route path="/hamstrings" element={<Hamstrings />} />
-    </Routes>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/deltoids" element={<Deltoids />} />
+        <Route path="/biceps" element={<Biceps />} />
+        <Route path="/pectorals" element={<Pectorals />} />
+        <Route path="/obliques" element={<Obliques />} />
+        <Route path="/upperabdominals" element={<UpperAbdominals />} />
+        <Route path="/lowerabdominals" element={<LowerAbdominals />} />
+        <Route path="/adductors" element={<Adductors />} />
+        <Route path="/quadriceps" element={<Quadriceps />} />
+        <Route path="/triceps" element={<Triceps />} />
+        <Route path="/trapezius" element={<Trapezius />} />
+        <Route path="/forearms" element={<Forearms />} />
+        <Route path="/latissimusdorsi" element={<LatissimusDorsi />} />
+        <Route path="/gluteals" element={<Gluteals />} />
+        <Route path="/calves" element={<Calves />} />
+        <Route path="/hamstrings" element={<Hamstrings />} />
+      </Routes>
+    </BrowserRouter>
   );
-  
 }
 
 export default App;
