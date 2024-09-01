@@ -19,6 +19,7 @@ import Obliques from './pages/Obliques';
 
 function App() {
   return (
+    <>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/deltoids" element={<Deltoids />} />
@@ -37,7 +38,9 @@ function App() {
       <Route path="/calves" element={<Calves />} />
       <Route path="/hamstrings" element={<Hamstrings />} />
     </Routes>
+    </>
   );
+  
 }
 
 export default App;
